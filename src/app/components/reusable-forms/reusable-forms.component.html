@@ -1,0 +1,9 @@
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div>
+    <label for="displayName">Display Name</label>
+    <input formControlName="displayName" type="text" id="displayName" />
+  </div>
+  <app-address [controlKey]="deliveryAddress" label="Delivery Address"></app-address>
+  <app-address [controlKey]="billingAddress" label="Billing Address"></app-address>
+  <button>Submit</button>
+</form>

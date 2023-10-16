@@ -1,0 +1,19 @@
+<main>
+
+    <!-- WORKING WITH DIRECTIVES -->
+  
+    <h1>Hey Ricardo - Welcome to Angular 16 Bro!</h1>
+    <section *hideAfter="5000 as time; then placeholder; let counter = counter">
+      <h2>Temporary</h2>
+      <p>
+        This should disappear in {{ time }} seconds, it disappears in: {{ counter }}
+      </p>
+    </section>
+  
+    <ng-template #placeholder let-hiddenAfter="hideAfter">
+      <h2>PlaceHolder</h2>
+      <p>Here was some content. It was visible for {{hiddenAfter}} seconds.</p>
+    </ng-template>
+  
+    <!-- DIRECTIVES -->
+  </main>
